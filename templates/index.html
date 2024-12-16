@@ -14,17 +14,18 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background: linear-gradient(to bottom, #e8f0fe, #f5f5f5);
+            color: #333;
         }
         header {
-            background: linear-gradient(90deg, #111, #4285f4);
+            background: linear-gradient(90deg, #003366, #4285f4);
             color: white;
-            padding: 20px 20px;
+            padding: 20px;
             width: 100%;
             text-align: center;
             position: fixed;
             top: 0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
@@ -34,36 +35,42 @@
         .container {
             background: white;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 80px; /* Space for the header */
-            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 100px; /* Space for the header */
+            width: 360px;
+            max-width: 90%;
         }
         h1 {
-            color: #333;
+            color: #444;
             margin-bottom: 20px;
+            font-size: 1.8em;
+            text-align: center;
         }
         input[type="email"], input[type="password"] {
             width: 100%;
-            padding: 10px;
+            padding: 12px 14px;
             margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            transition: border-color 0.3s;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s, box-shadow 0.3s;
         }
         input[type="email"]:focus, input[type="password"]:focus {
             border-color: #4285f4;
+            box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
             outline: none;
         }
         button {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             background-color: #4285f4;
             color: white;
             border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 6px;
+            font-size: 1em;
             font-weight: bold;
+            cursor: pointer;
             transition: background-color 0.3s;
         }
         button:hover {
@@ -71,8 +78,23 @@
         }
         footer {
             margin-top: 20px;
-            font-size: 0.8em;
+            text-align: center;
+            font-size: 0.9em;
             color: #777;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px;
+            }
+            header h1 {
+                font-size: 1.6em;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -81,10 +103,10 @@
         <h1>CS50x Sign In</h1>
     </header>
     <div class="container">
-        <h1>Sign In</h1>
+        <h1>Welcome Back!</h1>
         <form method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
             <button type="submit">Sign In</button>
         </form>
     </div>
