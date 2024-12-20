@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.image-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.image-area img {
+    width: 40px;
+    height: auto;
+}
+
+.text-area {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.text-area h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.text-area h5 {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align input and button to the right */
+}
+
+.input-area-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: flex-end; /* Align items to the right */
+    width: 100%;
+}
+
+.input-area-wrapper input {
+    width: 60%; /* Adjust width */
+    padding: 23.5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.guest-text {
+    width: 100%;
+    font-size: 12px; /* Smaller font size */
+    color: #777; /* Light color for the text */
+    text-align: right; /* Align text to the right */
+    margin-left: 40px;
+    margin-right: 5px;
+    margin-bottom: 50px; /* Space between text and button */
+}
+
+.input-area-wrapper button {
+    width: auto; /* Adjust button width to fit content */
+    padding: 12px 20px;
+    background: #4285f4;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-area-wrapper button:hover {
+    background: #357ae8;
+}
