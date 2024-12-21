@@ -1,9 +1,11 @@
+/* Reset and Box Sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
@@ -14,6 +16,7 @@ body {
     color: #333;
 }
 
+/* Login Container */
 .login-container {
     background: #fff;
     border-radius: 25px;
@@ -27,6 +30,7 @@ body {
     height: auto;
 }
 
+/* Image Area */
 .image-area {
     display: flex;
     justify-content: flex-start;
@@ -39,6 +43,7 @@ body {
     height: auto;
 }
 
+/* Text Area */
 .text-area {
     margin-top: 10px;
     text-align: left;
@@ -88,6 +93,7 @@ form {
     margin-bottom: 50px; /* Space between text and button */
 }
 
+/* Button Styling */
 .input-area-wrapper button {
     width: auto; /* Adjust button width to fit content */
     padding: 12px 20px;
@@ -104,5 +110,34 @@ form {
     background: #357ae8;
 }
 
+/* Show Password Styling */
+.show-password-container {
+    position: relative; /* Enables precise placement */
+    top: -20px; /* Adjust vertical position */
+    left: -310px; /* Align with the desired location */
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Ensures checkbox and label are level */
+    margin-top: 5px; /* Space between the input field and checkbox */
+    font-size: 14px;
+    color: #555;
+}
 
-/* Notes: remember to style the user input fields to look like googles */
+.show-password-container input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.show-password-container label {
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px; /* Adjust line height for better vertical alignment with checkbox */
+    margin-top: -40px; /* Slight upward adjustment for perfect alignment */
+}
+
+
+
+
+
+/* Notes: remember to style the user input fields to look like Google's */
